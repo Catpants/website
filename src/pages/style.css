@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+button {
+  outline: none;
+}
+h1 {
+  font-size: 45px;
+  color: #FF6A67;
+  letter-spacing: 1.6px;
+  line-height: 120%;
+  font-weight: 300;
+  margin-bottom: 16px;
+  text-align: center;
+}
+h2 {
+  color: #D3DBE4;
+  font-size: 20px;
+  line-height: 120%;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+}
+.splash-page {
+  background: linear-gradient( rgba(85, 98, 113, 0.8) 100%, rgba(85, 98, 113, 0.8)100%), 
+  url('../../static/texting-outdoors.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  padding: 0 !important;
+}
+.header-text {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header-logo {
+  color: #D3DBE4;
+  letter-spacing: 1px;
+  font-weight: 200;
+  font-size: 16px;
+  position: absolute;
+  left: 16px;
+  top: 16px;
+}
+.menu {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 480px) {
+  .menu {
+    display: none;
+  }
+}
+.splash-page a {
+  color: #D3DBE4;
+  letter-spacing: 1px;
+  font-weight: 500;
+  font-size: 20px;
+  margin: 0px 30px;
+}
+.splash-page a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.splash-page button {
+  border-radius: 100px;
+  border: none;
+  background-color: #FF6A67;
+  color: #0A0A0A;
+  padding: 8px 24px;
+  font-weight: 500;
+  font-size: 18px;
+}
+.btn-get-quote {
+  color: rgb(34, 34, 34);
+  padding: 8px 16px;
+  font-size: 16px;
+  text-transform: uppercase;
+  background-color: white;
+  border-radius: 100px;
+  border: 1px solid white;
+  margin: 16px;
+  font-weight: 500;
+}
+.about {
+  height: 590px;
+  width: 100%;
+  display: flex;
+  background-color: #3F4954;
+  justify-content: center;
+  align-items: center;
+}
+.about-text {
+  padding: 16px;
+  width: 30vw;
+}
+.about-image {
+  width: 30vw;
+}
+.about-image img {
+  object-fit: cover; /* Do not scale the image */
+  object-position: center; /* Center the image within the element */
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+}
