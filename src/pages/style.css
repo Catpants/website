@@ -2,11 +2,14 @@
   margin: 0;
   font-family: 'Lato', sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
 button {
   outline: none;
 }
 h1 {
-  font-size: 45px;
+  font-size: 32px;
   color: #FF6A67;
   letter-spacing: 1.6px;
   line-height: 120%;
@@ -15,11 +18,31 @@ h1 {
   text-align: center;
 }
 h2 {
-  color: #D3DBE4;
-  font-size: 20px;
+  color: #fff;
+  font-size: 24pt;
   line-height: 120%;
   font-weight: 400;
   letter-spacing: 1.2px;
+}
+h3 {
+  line-height: 1.6em;
+  letter-spacing: 1.8px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 400;
+}
+h4 {
+  font-size: 24px;
+  letter-spacing: 1.2px;
+  line-height: 130%;
+  padding: 16px 0px;
+}
+p {
+  line-height: 130%;
+  letter-spacing: 1.1px;
+}
+.container {
+  overflow: scroll;
 }
 .splash-page {
   background: linear-gradient( rgba(85, 98, 113, 0.8) 100%, rgba(85, 98, 113, 0.8)100%), 
@@ -39,6 +62,12 @@ h2 {
   justify-content: center;
   align-items: center;
 }
+.sub-heading {
+  font-size: 18pt;
+  color: #D3DBE4;
+  line-height: 130%;
+  letter-spacing: 1.1px;
+}
 .header-logo {
   color: #D3DBE4;
   letter-spacing: 1px;
@@ -56,18 +85,24 @@ h2 {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  display: none;
+
 }
-@media (max-width: 480px) {
+@media (min-width: 500px) {
   .menu {
-    display: none;
+    display: initial;
+  }
+  h1 {
+    font-size: 45px;
   }
 }
 .splash-page a {
   color: #D3DBE4;
   letter-spacing: 1px;
-  font-weight: 500;
-  font-size: 20px;
+  font-weight: 300;
+  font-size: 24px;
   margin: 0px 30px;
+  text-decoration: none;
 }
 .splash-page a:hover {
   text-decoration: underline;
@@ -80,7 +115,12 @@ h2 {
   color: #0A0A0A;
   padding: 8px 24px;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 24px;
+  transition: background-color 0.2s;
+}
+.splash-page button:hover {
+  background-color: #FF514E;
+  cursor: pointer;
 }
 .btn-get-quote {
   color: rgb(34, 34, 34);
@@ -94,24 +134,99 @@ h2 {
   font-weight: 500;
 }
 .about {
-  height: 590px;
+  min-height: 100vh;
   width: 100%;
   display: flex;
   background-color: #3F4954;
   justify-content: center;
   align-items: center;
+  text-align: start;
+  flex-direction: column;
+}
+.about h2 {
+  font-size: 32px;
+}
+.about h3 {
+  margin-bottom: 8px;
+}
+.about i, p {
+  color: #fff;
 }
 .about-text {
   padding: 16px;
-  width: 30vw;
+  max-width: 400px;
+  width: 80vw;
 }
 .about-image {
-  width: 30vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .about-image img {
   object-fit: cover; /* Do not scale the image */
   object-position: center; /* Center the image within the element */
-  height: 500px;
-  width: 500px;
+  height: 200px;
+  width: 200px;
   border-radius: 50%;
+}
+@media (min-width: 900px) {
+  .about {
+    flex-direction: row;
+  }
+  .about-image img {
+    height: 300px;
+    width: 300px;
+  }
+}
+.services {
+  background-color: #6B7B8E;
+  padding-bottom: 40px;
+}
+.services-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 24px;  
+}
+.services h2 {
+  padding: 32px 0px 8px 0px;
+  text-align: center;
+}
+.services-line {
+  border-bottom: 2px;
+  border-style: solid;
+  border-color: #FF6A67;
+  width: 150px;
+  align-self: center;
+}
+.services-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.service {
+  background-color: #D3DBE4;
+  min-height: 250px;
+  width: 300px;
+  min-width: 300px;
+  border-radius: 6px;
+  text-align: start;
+  margin: 0px 24px 16px 24px;
+  padding: 24px;
+}
+.service p, b, h4 {
+  color: #2F2D2D;
+}
+.service h4 {
+  padding: 0px;
+  padding-bottom: 16px;
+}
+.work {
+  height: 100vh;
+  background-color: #556271;
+}
+.work h2 {
+  text-align: center;
+  padding: 32px 0px;
 }
