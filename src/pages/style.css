@@ -41,8 +41,31 @@ p {
   line-height: 130%;
   letter-spacing: 1.1px;
 }
+input, textarea {
+  border-radius: 4px;
+  border: none;
+  padding: 0px 8px;
+  font-size: 16px;
+}
+textarea {
+  padding-top: 8px;
+}
 .container {
   overflow: scroll;
+}
+.btn-primary {
+  border-radius: 100px;
+  border: none;
+  background-color: #FF6A67;
+  color: #0A0A0A;
+  padding: 8px 24px;
+  font-weight: 500;
+  font-size: 24px;
+  transition: background-color 0.2s;
+}
+.btn-primary:hover {
+  background-color: #FF514E;
+  cursor: pointer;
 }
 .splash-page {
   background: linear-gradient( rgba(85, 98, 113, 0.8) 100%, rgba(85, 98, 113, 0.8)100%), 
@@ -106,20 +129,6 @@ p {
 }
 .splash-page a:hover {
   text-decoration: underline;
-  cursor: pointer;
-}
-.splash-page button {
-  border-radius: 100px;
-  border: none;
-  background-color: #FF6A67;
-  color: #0A0A0A;
-  padding: 8px 24px;
-  font-weight: 500;
-  font-size: 24px;
-  transition: background-color 0.2s;
-}
-.splash-page button:hover {
-  background-color: #FF514E;
   cursor: pointer;
 }
 .btn-get-quote {
@@ -204,12 +213,12 @@ p {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  margin: 8px;
 }
 .service {
   background-color: #D3DBE4;
   min-height: 250px;
   width: 300px;
-  min-width: 300px;
   border-radius: 6px;
   text-align: start;
   margin: 0px 24px 16px 24px;
@@ -223,10 +232,67 @@ p {
   padding-bottom: 16px;
 }
 .work {
-  height: 100vh;
-  background-color: #556271;
+  background-color: #D3DBE4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .work h2 {
   text-align: center;
   padding: 32px 0px;
+}
+.work img {
+  width: 100vw;
+  max-width: 400px;
+}
+.work p, .work h2, .work h3 {
+  color: #2F2D2D;
+}
+.work-desc {
+  padding: 24px;
+  max-width: 400px;
+}
+.contact {
+  background-color: #6B7B8E;
+}
+.contact h2 {
+  color: #0A0A0A;
+  padding-top: 32px;
+}
+.contact h2, .contact p {
+  text-align: center;
+}
+.contact label {
+  color: #0A0A0A;
+  font-size: 20px;
+  letter-spacing: 1.2px;
+  line-height: 120%;
+  padding: 16px 0px 2px 0px;
+  text-align: start;
+}
+.contact-form-container {
+  display: flex;
+  justify-content: center;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+.contact input {
+  width: 396px;
+  height: 36px;
+}
+.contact textarea {
+  width: 396px;
+  height: 50px;
+}
+.contact-sub-heading {
+  padding: 8px 0px 24px 0px;
+}
+.contact button {
+  width: fit-content;
+  font-size: 16px;
+  align-self: center;
+  margin: 16px 0px;
 }
