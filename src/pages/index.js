@@ -10,13 +10,13 @@ export default function Home() {
         <div className="header-text">
           <p className="header-logo">Cat Swale</p>
           <div className="menu">
-            <a href="#about">About</a>
-            <a href="#work">Work</a>
-            <a href="#services">Services</a>
+            <a className="menu-link" href="#about">About</a>
+            <a className="menu-link" href="#work">Work</a>
+            <a className="menu-link" href="#services">Services</a>
             <a className="btn-primary" href="#contact">Contact Me</a>
           </div>
-          <h1>Quality Mobile Apps Made <br />Just for Your Business</h1>
-          <p className="sub-heading">Apps Made Easy</p>
+          <h1>Quality Apps Made <br />Just for Your Business</h1>
+          <p className="sub-heading">Mobile and Web Apps Made Easy</p>
         </div>
       </div>
       <div className="about" id="about">
@@ -25,11 +25,11 @@ export default function Home() {
           <i>Freelance Software Developer</i>
           <br></br>
           <br></br>
-          <p>I'm a full stack developer living in Perth, Western Australia.I specialise in mobile app development and am passionate about making beautiful, engaging solutions which lift any business to the next level.</p>
+          <p>I'm a full stack developer living in Perth, Western Australia. I specialise in mobile and web app development and am passionate about making beautiful, engaging solutions which lift any business to the next level.</p>
           <br></br>
-          <p>I've been working as a software engineer for 4 years andcurrently also work full time for Virtual Gaming Worlds. I look forward to working with you!</p>
+          <p>I've been working as a software engineer for 4 years. I look forward to working with you!</p>
           <br></br>
-          <p>~Cat</p>
+          <i>Cat</i>
         </div>
         <div className="about-image">
           <img src="IMG_0608.jpg"></img>
@@ -43,17 +43,17 @@ export default function Home() {
         <div className="services-container">
           <div className="service">
             <h4>Create a New Mobile App</h4>
-            <p>Create a new mobile app from scratch. This includes consultation, development , deployment to the apple/google play stores and finally a maintenace period.</p>
+            <p>Create a new mobile app from scratch. This includes consultation, development ,deployment to the apple/google play stores and finally a maintenace period.</p>
             <b><br></br>Get in touch today for a free quote.</b>
           </div>
           <div className="service">
             <h4>Update an Existing App</h4>
-            <p>Update an existing app withnew project features to retain and engage your audience.Adding new features or revamping your apps stylecan be easy.</p>
+            <p>Update an existing app with new project features to retain and engage your audience.Adding new features or revamping your app's style can be easy.</p>
             <b><br></br>Get in touch today for a free quote.</b>
           </div>
           <div className="service">
             <h4>Fix Bugs/Issues with an Existing App</h4>
-            <p>Existing apps often requiremaintenance. They may contains bugs that are hinderingyour business growth. I would love to hear your issuesand collaborate to resolve them.</p>
+            <p>Existing apps often require maintenance. They may contain bugs that are hindering your business's growth. I would love to hear your issues and collaborate to resolve them.</p>
             <b><br></br>Get in touch today for a free quote.</b>
           </div>
         </div>
