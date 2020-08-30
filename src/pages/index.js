@@ -13,7 +13,7 @@ export default function Home() {
             <a href="#about">About</a>
             <a href="#work">Work</a>
             <a href="#services">Services</a>
-            <button className="btn-primary" href="#contact">Contact Me</button>
+            <a className="btn-primary" href="#contact">Contact Me</a>
           </div>
           <h1>Quality Mobile Apps Made <br />Just for Your Business</h1>
           <p className="sub-heading">Apps Made Easy</p>
@@ -75,6 +75,21 @@ export default function Home() {
           <ContactUs />
         </div>
       </div>
+      <footer>
+        <h3>@ 2020 Cat Swale</h3>
+        <div className="footer-container">
+          <address className="footer-location">
+            <p className="footer-heading">Location</p>
+            <p>Cockburn Central</p>
+            <p>Australia, WA 6164</p>
+          </address>
+          <address>
+            <p className="footer-heading">Contact</p>
+            <p>0449679511</p>
+            <p>catswale@gmail.com</p>
+          </address>
+        </div>
+      </footer>
     </div >
 
   )
@@ -107,7 +122,7 @@ export function ContactUs() {
       <input type="email" id="user_email" />
       <label>Message</label>
       <textarea id="message" />
-      <button className="btn-primary" type="submit">SUBMIT</button>
+      <button name="button" className="btn-primary" type="submit">SUBMIT</button>
     </form>
   );
 }

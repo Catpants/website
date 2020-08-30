@@ -50,21 +50,35 @@ input, textarea {
 textarea {
   padding-top: 8px;
 }
+footer {
+  background-color: #3F4954;
+  text-align: center;
+}
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
 .container {
   overflow: scroll;
 }
 .btn-primary {
-  border-radius: 100px;
-  border: none;
+  border-radius: 40px;
+  border: 1px solid #FF6A67;
   background-color: #FF6A67;
   color: #0A0A0A;
-  padding: 8px 24px;
+  padding: 7px 23px;
   font-weight: 500;
   font-size: 24px;
   transition: background-color 0.2s;
 }
-.btn-primary:hover {
-  background-color: #FF514E;
+.btn-primary:hover,
+.btn-primary:focus {
+  border: 1px solid #0A0A0A;
+  color: #0A0A0A;
   cursor: pointer;
 }
 .splash-page {
@@ -278,13 +292,14 @@ textarea {
 .contact-form {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  padding: 16px;
+  max-width: 336px;
 }
 .contact input {
-  width: 396px;
   height: 36px;
 }
 .contact textarea {
-  width: 396px;
   height: 50px;
 }
 .contact-sub-heading {
@@ -295,4 +310,26 @@ textarea {
   font-size: 16px;
   align-self: center;
   margin: 16px 0px;
+}
+.footer-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding-bottom: 32px;
+}
+.footer-location {
+  margin-right: 32px;
+}
+footer h3 {
+  padding: 24px 0px;
+}
+footer h4 {
+  color: #fff;
+}
+.footer-heading {
+  font-size: 16px;
+  padding-bottom: 5px;
+}
+footer p {
+  font-size: 10px;
 }
