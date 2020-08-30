@@ -13,7 +13,7 @@ export default function Home() {
             <a className="menu-link" href="#about">About</a>
             <a className="menu-link" href="#work">Work</a>
             <a className="menu-link" href="#services">Services</a>
-            <a className="btn-primary" href="#contact">Contact Me</a>
+            <a className="btn-secondary" href="#contact">Contact Me</a>
           </div>
           <h1>Quality Apps Made <br />Just for Your Business</h1>
           <p className="sub-heading">Mobile and Web Apps Made Easy</p>
