@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 
 import './style.css'
@@ -32,7 +32,7 @@ export default function Home() {
           <i>Cat</i>
         </div>
         <div className="about-image">
-          <img src="IMG_0608.jpg"></img>
+          <img src="avatar.jpg"></img>
         </div>
       </div>
       <div className="services" id="services">
@@ -96,9 +96,11 @@ export default function Home() {
 }
 
 export function ContactUs() {
+  const [loading, setLoading] = useState(false);
 
-  function sendEmail(e) {
+  const sendEmail = (e) => {
     e.preventDefault();
+    setLoading(true);
     var templateParams = {
       from_name: document.getElementById("user_name").value,
       message: document.getElementById("message").value,
@@ -108,8 +110,10 @@ export function ContactUs() {
     emailjs.send('gmail', 'template_PmaGFlgd', templateParams, 'user_yYvDYZVBeLjAnROspwQAR')
       .then(function (response) {
         console.log('SUCCESS!', response.status, response.text);
+        setLoading(false);
       }, function (err) {
         console.log('FAILED...', err);
+        setLoading(false);
       });
   }
 
@@ -122,7 +126,7 @@ export function ContactUs() {
       <input type="email" id="user_email" />
       <label>Message</label>
       <textarea id="message" />
-      <button name="button" className="btn-primary" type="submit">SUBMIT</button>
+      <button name="button" className="btn-primary" type="submit">{loading ? 'SUBMITTING' : 'SUBMIT'}</button>
     </form>
   );
 }
