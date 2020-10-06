@@ -27,7 +27,7 @@ export default function Home() {
           <br></br>
           <p>I'm a full stack developer living in Perth, Western Australia. I specialise in mobile and web app development and am passionate about making beautiful, engaging solutions which lift any business to the next level.</p>
           <br></br>
-          <p>I've been working as a software engineer for 4 years. I look forward to working with you!</p>
+          <p>I've been working as a software engineer for 4 years. My skills include React, React Native, Javascript, Nodejs, Express, Azure, AWS, Responsive Design, CSS, HTML5, Python, Java and much more. I look forward to working with you!</p>
           <br></br>
           <i>Cat</i>
         </div>
@@ -85,7 +85,7 @@ export default function Home() {
           </address>
           <address>
             <p className="footer-heading">Contact</p>
-            <p>0449679511</p>
+            <p>+61 449 679 511</p>
             <p>catswale@gmail.com</p>
           </address>
         </div>
@@ -126,7 +126,7 @@ export function ContactUs() {
       <input type="email" id="user_email" />
       <label>Message</label>
       <textarea id="message" />
-      <button name="button" className="btn-primary" type="submit">{loading ? 'SUBMITTING' : 'SUBMIT'}</button>
+      <button disabled={loading} name="button" className="btn-primary" type="submit">{loading ? 'SUBMITTING' : 'SUBMIT'}</button>
     </form>
   );
 }

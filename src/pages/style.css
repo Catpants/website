@@ -177,12 +177,14 @@ button {
   height: 200px;
   width: 200px;
   border-radius: 50%;
+  margin-left: 0px;
 }
 @media (min-width: 900px) {
   .about {
     flex-direction: row;
   }
   .about-image img {
+    margin-left: 100px;
     height: 300px;
     width: 300px;
   }
@@ -335,6 +337,11 @@ footer p {
   border: 1px solid #0A0A0A;
   color: #0A0A0A;
   cursor: pointer;
+}
+.btn-primary:disabled {
+  background-color: #ff6a679c;
+  border: 1px solid #ff6a679c;
+  cursor: not-allowed;
 }
 .btn-secondary {
   border-radius: 40px;
