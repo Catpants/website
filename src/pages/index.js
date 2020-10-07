@@ -25,7 +25,7 @@ export default function Home() {
           <i>Freelance Software Developer</i>
           <br></br>
           <br></br>
-          <p>I'm a full stack developer living in Perth, Western Australia. I specialise in mobile and web app development and am passionate about making beautiful, engaging solutions which lift any business to the next level.</p>
+          <p>I'm a Full Stack Developer living in Perth, Western Australia. I specialise in mobile and web app development and am passionate about making beautiful, engaging solutions which lift any business to the next level.</p>
           <br></br>
           <p>I've been working as a software engineer for 4 years. My skills include React, React Native, Javascript, Nodejs, Express, Azure, AWS, Responsive Design, CSS, HTML5, Python, Java and much more. I look forward to working with you!</p>
           <br></br>
