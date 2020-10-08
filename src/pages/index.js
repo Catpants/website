@@ -22,7 +22,7 @@ export default function Home() {
       <div className="about" id="about">
         <div className="about-text">
           <h2>Hi, I'm Cat Swale!</h2>
-          <i>Freelance Software Developer</i>
+          <i>Perth Freelance Software Developer</i>
           <br></br>
           <br></br>
           <p>I'm a Full Stack Developer living in Perth, Western Australia. I specialise in mobile and web app development and am passionate about making beautiful, engaging solutions which lift any business to the next level.</p>
